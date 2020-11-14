@@ -1,44 +1,41 @@
-nav {
-  background-color: rgb(49, 49, 49);
-  color: white;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.input {
   text-align: center;
-  font-size: 4rem;
+  margin: 100px 0;
 }
 
-main {
-  margin: 1rem;
+input[type="text"] {
+  height: 50px;
+  width: 600px;
+  background: cornsilk;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  border-radius: 2px;
+  padding: 10px 10px;
 }
 
-#clearHistoryButton {
-  margin-bottom: 0.5rem;
+input[type="submit"] {
+  height: 50px;
+  width: 100px;
+  background: cornsilk;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  border-radius: 2px;
 }
 
-.search-history-button {
-  width: 100%;
-  background: white;
-  text-align: left;
-}
-
-.col-md-3 {
-  background-color: rgb(235, 235, 235);
-}
-
-.uvi {
-  color: white;
-}
-
-.uvi-red {
-  background-color: rgb(143, 0, 0);
-}
-
-.uvi-orange {
-  background-color: rgb(160, 104, 0);
-}
-
-.uvi-yellow {
-  background-color: rgb(141, 141, 0);
-}
-
-.uvi-green {
-  background-color: green;
+.display {
+  text-align: center;
 }
