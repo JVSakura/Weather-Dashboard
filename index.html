@@ -1,56 +1,43 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Weather Dashboard</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css"/>
 </head>
 
 <body>
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h1 class="display-4">Weather App</h1>
-      <p class="lead">To get the local weather information, please enter the preferred city in the search bar below.</p>
-    </div>
-  </div>
-  <div class="container">
+  <nav>
+    Weather Dashboard
+  </nav>
+  <main>
     <div class="row">
       <div class="col-md-3">
         <form>
-          <h2>Enter City</h2>
-          <input id="inputText" type="text">
-          <button id="submit" type="button" class="btn btn-primary">Submit</button>
+          <h2>Search for a City:</h2>
+          <input id="searchInput" type="text">
+          <button id="searchButton" type="submit" class="btn btn-primary">🔍</button>
         </form>
-        <button id="clearButton" type="button" class="btn btn-danger">Clear History</button>
-        <ul id="search"></ul>
+        <button id="clearHistoryButton" type="button" class="btn btn-danger">Clear History</button>
+        <ul id="searchHistory"></ul>
       </div>
-      <div class="row">
-        <div class="col-md-9">
-          <div class="card">
-            <div id="currentWeather" class="card-body"></div>
+      <div class="col-md-9">
+        <div class="card">
+          <div id="currentWeather" class="card-body">
+
           </div>
         </div>
-        <h3> 5 Day Forecast</h3>
-        <div id="futureForecast" class="row">
+        <h3>5-Day Forecast</h3>
+        <div id="fiveDayForecast" class="row">
         </div>
       </div>
     </div>
-  </div>
-
-
-
+  </main>
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-    crossorigin="anonymous"></script>
-  <script src="forecast.js"></script>
+  <script src="./script.js">
+  </script>
 </body>
 
 </html>
