@@ -9,10 +9,6 @@ main {
   margin: 1rem;
 }
 
-#clearHistoryButton {
-  margin-bottom: 0.5rem;
-}
-
 .search-history-button {
   width: 100%;
   background: white;
@@ -20,7 +16,7 @@ main {
 }
 
 .col-md-3 {
-  background-color: rgb(235, 235, 235);
+  background-color: white;
 }
 
 .uvi {
@@ -32,11 +28,11 @@ main {
 }
 
 .uvi-orange {
-  background-color: rgb(160, 104, 0);
+  background-color: orange;
 }
 
 .uvi-yellow {
-  background-color: rgb(141, 141, 0);
+  background-color: yellow;
 }
 
 .uvi-green {
