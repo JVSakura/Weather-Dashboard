@@ -75,4 +75,3 @@ document.addEventListener('click', (event) => {
   if (target.classList.contains('search-history-button')) {
     displayWeather(target.value)
   }
-})
