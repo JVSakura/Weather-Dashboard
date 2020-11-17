@@ -25,21 +25,6 @@ const displayWeather = (city) => {
           document.getElementById('currentWeather').innerHTML = htmlText
           htmlText = ''
 
-          for (let i = 1; i < 6; i++) {
-            current = data.daily[i]
-            unixTimestamp = current.dt
-            date = new Date(unixTimestamp * 1000)
-            htmlText += `<div class="col-md">
-                            <div class="card">
-                              <div class="card-body bg-primary text-light forecast">
-                                <h4>${date.getMonth()}/${date.getDate()}/${date.getFullYear()}</h4>
-                                <p>Temp: ${current.temp.max} °F</p>
-                                <p>Humidity: ${current.humidity}%</p>
-                              </div>
-                            </div>
-                          </div>`
-          }
-
           document.getElementById('fiveDayForecast').innerHTML = htmlText
 
         })
