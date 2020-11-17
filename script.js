@@ -52,7 +52,6 @@ document.getElementById('searchButton').addEventListener('click', (event) => {
     displayWeather(input.value)
     input.value = ''
   }
-})
 
 document.addEventListener('click', (event) => {
   event.preventDefault()
