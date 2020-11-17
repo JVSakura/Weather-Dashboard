@@ -66,12 +66,6 @@ if (searchHistory.length) {
   displayWeather(searchHistory[searchHistory.length - 1])
 }
 
-document.getElementById('clearHistoryButton').addEventListener('click', (event) => {
-  searchHistory = []
-  localStorage.setItem('weatherSearchHistory', JSON.stringify(searchHistory))
-  displaySearchHistory()
-})
-
 document.getElementById('searchButton').addEventListener('click', (event) => {
   event.preventDefault()
   let input = document.getElementById('searchInput')
