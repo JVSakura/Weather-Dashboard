@@ -14,6 +14,7 @@ const getUVIndexRange = (val) => {
     return "green"
   }
 }
+
 const displayWeather = (city) => {
   axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=66f427550a65f6b2e1c0322728193766`)
     .then(res => {
