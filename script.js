@@ -48,18 +48,6 @@ const displayWeather = (city) => {
     .catch(err => console.error(err))
 }
 
-const displaySearchHistory = () => {
-  let list = document.getElementById('searchHistory')
-  let htmlText = ''
-  let len = searchHistory.length - 1
-  for (let i = len; i > -1; i--) {
-    htmlText += `<li>
-                    <button type="button" class="btn btn-outline-secondary search-history-button" value="${searchHistory[i]}">${searchHistory[i]}</button>
-                  </li>`
-  }
-  list.innerHTML = htmlText
-}
-
 displaySearchHistory()
 
 if (searchHistory.length) {
